@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipcalc</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="flags">
+        <button id="flag-german" class="flag-button"><img src="./images/flag-germany.svg" alt="german" class="flag-image"></button>
+        <button id="flag-english" class="flag-button"><img src="./images/flag-england.svg" alt="english" class="flag-image"></button>
+    </div>
+
+    <div class="content">
+        <div id="ip-wrapper">
+            <input type="text" id="IP">
+            <p style="font-size:28px; font-weight:600; color: white; display:inline;">/</p>
+            <input type="text" id="MASK">
+        </div>
+
+        <h4 id="Qsubnet" class="answer-name"></h4>
+        <input type="text" id="subnet" class="answer-field">
+        <h4 id="Qnet-adr" class="answer-name"></h4>
+        <input type="text" id="net-adr" class="answer-field">
+        <h4 id="Qbroadcast-adr" class="answer-name"></h4>
+        <input type="text" id="broadcast-adr" class="answer-field">
+        <h4 id="Qfirst-adr" class="answer-name"></h4>
+        <input type="text" id="first-adr" class="answer-field">
+        <h4 id="Qlast-adr" class="answer-name"></h4>
+        <input type="text" id="last-adr" class="answer-field">
+        <h4 id="Qadr-count" class="answer-name"></h4>
+        <input type="text" id="adr-count" class="answer-field">
+
+        <div class="check-buttons">
+            <button id="check" class="check-button" onclick="checkAndGetAnswers()"></button>
+            <button id="solution" class="check-button" onclick="showSolution()"></button>
+            <button id="reset" class="check-button" onclick="generate()"></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import "./fonts.css";
+
+* {
+    font-family: 'Aileron';
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #111111;
+}
+
+
+
+.flags {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.flag-image {
+    width: 30px;
+    height: auto;
+    background: none;
+    border: none;
+}
+
+.flag-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.content {
+    max-width: 500px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 18px;
+    margin: 30px auto;
+    background: #ffffff17;
+    padding: 20px;
+}
+
+input[type="text"] {
+    height: 32px;
+    border-radius: 9px;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    
+}
+
+
+#ip-wrapper {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#IP,
+#MASK {
+    background: none;
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+    display: inline;
+    outline: none;
+}
+
+#IP {
+    width: 230px;
+    text-align: right;
+}
+
+#MASK {
+    width: 50px;
+}
+
+
+
+.check-buttons {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.check-button {
+    height: 32px;
+    border-radius: 9px;
+    padding: 0px 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    flex-grow: 4;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+#check {
+    background-color: #1373DB33;
+    color: #1373DB;
+}
+
+#solution {
+    background-color: #5EFF8633;
+    color: #5EFF86;
+}
+
+#reset {
+    background-color: #ffffff33;
+    color: #ffffff;
+}
+
+
+.answer-name {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 3px;
+    opacity: 70%;
+}
+
+.answer-field {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #111111;
+    border: 2px solid #111111;
+}
+
+.right {
+    border: 1px solid #5EFF86;
+}
+
+.wrong {
+    border: 1px solid #FF473D;
+}

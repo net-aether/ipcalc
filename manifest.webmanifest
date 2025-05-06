@@ -1,0 +1,33 @@
+{
+    "name": "IPcalc",
+    "short_name": "IPcalc",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color" : "#fff" ,
+    "description": "The one and only true IPcalc for all HTL peoples",
+    "icons": [{
+        "src": "./images/app_icon_48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      }, {
+        "src": "./images/app_icon_72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }, {
+        "src": "./images/app_icon_96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      }, {
+        "src": "./images/app_icon_144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "./images/app_icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }],
+      "display_override": ["window-controls-overlay"],
+      "shortcuts": []
+  }
+  
